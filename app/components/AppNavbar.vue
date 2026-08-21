@@ -128,6 +128,7 @@
                   <NuxtLink
                   v-for="service in navigation" :key="service.name"
                     :to="service.to"
+                    @click="mobileMenuOpen=false"
                     class="block rounded-2xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-900 transition hover:border-arch-accent/40 hover:bg-gray-50 dark:border-white/10 dark:bg-white/5 dark:text-white dark:hover:border-white/20 dark:hover:bg-white/10"
                   >
                     <span class="block font-semibold">{{ service.name }}</span>
@@ -141,26 +142,28 @@
 
               <NuxtLink
                 to="/projekte"
+                 @click="mobileMenuOpen=false"
                 class="-mx-3 block rounded-2xl px-4 py-3 text-base/7 font-semibold text-gray-900 transition hover:bg-gray-50 dark:text-white dark:hover:bg-white/5"
                 >Projekte</NuxtLink>
-              >
+              
               <NuxtLink
                 to="/rreth-nesh"
+                 @click="mobileMenuOpen=false"
                 class="-mx-3 block rounded-2xl px-4 py-3 text-base/7 font-semibold text-gray-900 transition hover:bg-gray-50 dark:text-white dark:hover:bg-white/5"
-                >Rreth Nesh</NuxtLink
-              >
+                >Rreth Nesh</NuxtLink>
               <NuxtLink
                 to="/kontakt"
+                 @click="mobileMenuOpen=false"
                 class="-mx-3 block rounded-2xl px-4 py-3 text-base/7 font-semibold text-gray-900 transition hover:bg-gray-50 dark:text-white dark:hover:bg-white/5"
                 >Kontakt</NuxtLink>
-              >
+              
             </div>
 
             <div class="py-6">
               <NuxtLink
                 to="/kontakt"
-                class="block rounded-2xl bg-arch-black px-4 py-3 text-center text-base/7 font-semibold text-white transition hover:bg-arch-accent dark:bg-white dark:text-gray-900 dark:hover:bg-gray-100"
-              >
+                 @click="mobileMenuOpen=false"
+                class="block rounded-2xl bg-arch-black px-4 py-3 text-center text-base/7 font-semibold text-white transition hover:bg-arch-accent dark:bg-white dark:text-gray-900 dark:hover:bg-gray-100">
                 Konsultohu për Projektin
               </NuxtLink>
             </div>
